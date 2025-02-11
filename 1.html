@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    //перше завдання//
+  var name = "Дмитро"
+    let age = 17
+    const quote = "Cogito ergo sum"
+    console.log("Моє ім'я: " + name)
+    console.log("Мій вік: " + age)
+    console.log( "Моя улюблена цитата: " + quote)
+    //друге завдання//
+    let number = 10;
+  let string = 'hello, World!';
+  let boolean = true;
+  let mynull = null;
+  let bigint = 1234567890123456789012345678901234567890n;
+
+    console.log("number:", number, typeof number);
+    console.log("string:", string, typeof string);
+    console.log("boolean:", boolean, typeof boolean);
+    console.log("mynull:", mynull, typeof mynull);
+    console.log("bigInt:", bigint, typeof bigint);
+    //третє завдання//
+    let a = 10;
+    let b = 5;
+    let sum = a + b;
+    console.log("sum:", sum);
+    let diff = a - b;
+    console.log("diff:", diff);
+    let product = a * b;
+    console.log("product:", product);
+    let quantity = a / b;
+    console.log("quantity:", quantity);
+    let remainder = a % b;
+    console.log("remainder:", remainder);
+    let  power = a ** b;
+    console.log("power:", power);
+    //четверте завдання//
+    let aa = 25;
+    a +=5
+    a *=2
+    let than = a > 25
+    console.log("aa:", aa);
+    console.log("than:", than);
+    //пʼяте завдання//
+    let isAdult = true;
+    let hasPermission = false;
+    let accessGranted = isAdult || hasPermission;
+    let accessMessage = accessGranted ? "Доступ дозволено" : "Доступ заборонено";
+    console.log(accessMessage);
+    //шосте завдання//
+    let nummber = 10;
+    let sttring = "20";
+    let result = nummber + sttring; // "1020"
+    console.log(result); // Виведе "1020"
+    console.log(typeof result); // Виведе "string"
+    console.log(10 == "10"); // true
+    console.log(10 === "10"); // false
+    //сьоме завдання//
+    function calculator (x , y , operator) {
+        switch (operator) {
+            case "+":
+                return x + y;
+            case "-":
+                return x - y;
+            case "*":
+                return x * y;
+            case "/":
+                if (y === 0){
+                    return 'Ділення не можливе';
+                }
+                return x / y;
+            default:
+                return "Невідома операція.";
+        }
+    }
+    console.log(calculator(5, 3, "+"));
+    console.log(calculator(10, 2, "-"));
+    console.log(calculator(4, 6, "*"));
+    console.log(calculator(15, 0, "/"));
+    console.log(calculator(7, 2, "/"));
+    console.log(calculator(2, 3, "%")); 
+</script>
+</body>
+</html>
